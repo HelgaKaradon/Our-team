@@ -120,6 +120,17 @@ body {
         font-size: 2.4rem;
         color: $secondary-color;
     }
+    &__text {
+        &:after {
+            content: '';
+            display: block;
+            margin: 20px auto;
+            width: 52px;
+            height: 4px;
+            background-image: linear-gradient(to right, $primary-color 20%, transparent 20%, transparent 35%,
+            $primary-color 35%, $primary-color 65%, transparent 65%, transparent 80%, $primary-color 80%);
+        }
+    }
     
 }
 
